@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Bán Đồ Ăn - Food Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>Food Store</span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link">Trang Chủ</a></li>
+                        <li><a href="#menu" class="nav-link">Menu</a></li>
+                        <li><a href="#about" class="nav-link">Về Chúng Tôi</a></li>
+                        <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                        <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Chào Mừng Đến Food Store</h1>
+            <p>Những món ăn ngon nhất được chế biến tươi mới mỗi ngày</p>
+            <button class="btn btn-primary">Đặt Hàng Ngay</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Menu Đặc Biệt</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                <button class="filter-btn" data-filter="rice">Cơm</button>
+                <button class="filter-btn" data-filter="noodle">Mì & Phở</button>
+                <button class="filter-btn" data-filter="snack">Snack</button>
+                <button class="filter-btn" data-filter="drink">Thức Uống</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Rice Dishes -->
+                <div class="menu-item" data-category="rice">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Cơm Tấm">
+                        <span class="sale-badge">-15%</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Cơm Tấm Sườn</h3>
+                        <p>Cơm tấm nóng kèm sườn nướng và trứng ốp</p>
+                        <div class="item-footer">
+                            <span class="price">35.000 ₫</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="rice">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop&crop=entropy&cs=tinysrgb&q=80" alt="Cơm Gà">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cơm Gà Xối Mỡ</h3>
+                        <p>Cơm gà thơm ngon kèm nước sốt cà chua</p>
+                        <div class="item-footer">
+                            <span class="price">30.000 ₫</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noodle Dishes -->
+                <div class="menu-item" data-category="noodle">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&h=400&fit=crop" alt="Phở Bò">
+                    </div>
+                    <div class="item-info">
+                        <h3>Phở Bò</h3>
+                        <p>Phở bò truyền thống với nước dùng thơm lừng</p>
+                        <div class="item-footer">
+                            <span class="price">40.000 ₫</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="noodle">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&h=400&fit=crop" alt="Mì Ý">
+                    </div>
+                    <div class="item-info">
+                        <h3>Mì Ý Sốt Cà Chua</h3>
+                        <p>Mì Ý tươi với sốt cà chua tự chế</p>
+                        <div class="item-footer">
+                            <span class="price">45.000 ₫</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snacks -->
+                <div class="menu-item" data-category="snack">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=500&h=400&fit=crop" alt="Bánh Mì">
+                    </div>
+                    <div class="item-info">
+                        <h3>Bánh Mì Thịt</h3>
+                        <p>Bánh mì giòn kèm thịt nướng và pâté</p>
+                        <div class="item-footer">
+                            <span class="price">25.000 ₫</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="snack">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&h=400&fit=crop" alt="Gà Rán">
+                    </div>
+                    <div class="item-info">
+                        <h3>Gà Rán Giòn</h3>
+                        <p>Gà rán giòn vàng nóng hổi</p>
+                        <div class="item-footer">
+                            <span class="price">55.000 ₫</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-item" data-category="drink">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=500&h=400&fit=crop" alt="Nước Cam">
+                    </div>
+                    <div class="item-info">
+                        <h3>Nước Cam Tươi</h3>
+                        <p>Nước cam tươi mát vắt từ cam Việt Nam</p>
+                        <div class="item-footer">
+                            <span class="price">15.000 ₫</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drink">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&h=400&fit=crop" alt="Cà Phê">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cà Phê Đen Đá</h3>
+                        <p>Cà phê đen đá cổ điển ngon lẫm</p>
+                        <div class="item-footer">
+                            <span class="price">20.000 ₫</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Về Chúng Tôi</h2>
+                    <p>Food Store là cửa hàng ăn uống với truyền thống phục vụ khách hàng tốt nhất. Chúng tôi cam kết mang đến những món ăn ngon, chất lượng cao, với nguyên liệu tươi mới mỗi ngày.</p>
+                    <p>Với đội ngũ đầu bếp giàu kinh nghiệm, chúng tôi tự hào phục vụ các món ăn truyền thống Việt Nam cũng như quốc tế.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Nguyên liệu tươi sạch</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Đội bếp chuyên nghiệp</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Giao hàng nhanh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&h=400&fit=crop" alt="Nhà hàng">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Địa Chỉ</h3>
+                            <p>123 Đường Nguyễn Huệ, Quận 1, TP.HCM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Điện Thoại</h3>
+                            <p>(+84) 28 3822 5000</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@foodstore.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Giờ Mở Cửa</h3>
+                            <p>Thứ 2-7: 10:00 - 22:00<br>Chủ Nhật: 11:00 - 21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Tên của bạn" required>
+                    <input type="email" placeholder="Email của bạn" required>
+                    <textarea placeholder="Tin nhắn của bạn" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Food Store</h3>
+                    <p>Cửa hàng ăn uống uy tín, chất lượng hàng đầu</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#menu">Cơm & Cơm Tấm</a></li>
+                        <li><a href="#menu">Phở & Mì</a></li>
+                        <li><a href="#menu">Snack</a></li>
+                        <li><a href="#menu">Thức Uống</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo Dõi</h3>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Food Store. Bảo lưu mọi quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
